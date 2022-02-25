@@ -11,3 +11,4 @@ export const SearchIcon = () => (
     ></path>
   </svg>
 );
+
