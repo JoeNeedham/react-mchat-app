@@ -35,6 +35,8 @@ const Auth = () => {
             username, password, fullName, phoneNumber, avatarURL
         })
 
+        console.log(userId);
+
         cookies.set('token', token);
         cookies.set('username', username);
         cookies.set('fullName', fullName);
@@ -45,6 +47,8 @@ const Auth = () => {
             cookies.set('avatarURL', avatarURL);
             cookies.set('hashedPassword', hashedPassword);
         }
+
+        window.location.reload();
 
 
     }
